@@ -52,7 +52,7 @@ public class ArticleController {
 	@PostMapping("add")
 //@ResponseBody
 	public String addArticle(@Valid Article article, BindingResult result,
-			@RequestParam(name = "providerId", required = false) Long p) {
+			@RequestParam(name = "providerId", required = true) Long p) {
 		Provider provider = providerRepository.findById(p)
 				.orElseThrow(() -> new IllegalArgumentException("Invalid provider Id:" + p));
 		article.setProvider(provider);
