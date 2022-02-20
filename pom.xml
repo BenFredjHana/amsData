@@ -13,7 +13,7 @@
 	<artifactId>amsData</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>amsData</name>
-	<packaging>war</packaging>
+	<!-- <packaging>war</packaging> -->
 	<description>a simple MVC Spring Project with data</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -63,7 +63,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>amsv1</finalName>
+		<!-- <finalName>amsv1</finalName> -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
